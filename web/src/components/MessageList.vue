@@ -12,7 +12,7 @@
   import Message from './Message.vue'
 
   import { messages } from '../contexts/messages'
-  
+
   export default {
     components: {
       Message
@@ -35,10 +35,8 @@
   #messageList {
     overflow: hidden;
 
-    width: 100%;
-    height: 566px;
-    
-    border-radius: 16px;
+    width: 100vw;
+    height: calc(100vh - 72px);
   }
 
   #messageList ul {

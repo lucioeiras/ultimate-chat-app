@@ -25,7 +25,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background: #F7FAFC;
   }
 </style>

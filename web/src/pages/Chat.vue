@@ -12,12 +12,9 @@
 
 <style scoped>
   #chat {
-    width: 1040px;
-    height: 640px;
+    width: 100vw;
+    height: 100vh;
 
     background: #fff;
-    
-    border: 1px solid #E2E8F0;
-    border-radius: 16px;
   }
 </style>

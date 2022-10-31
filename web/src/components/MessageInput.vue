@@ -7,7 +7,7 @@
 
 <script>
   import { messages } from '../contexts/messages'
- 
+
   export default {
     data() {
       return {
@@ -37,10 +37,8 @@
     width: 100%;
     height: 100%;
 
-    background: #F7FAFC;
-    
     border: 0;
-    border-bottom-left-radius: 16px;
+    background: #F7FAFC;
 
     color: #4A5568;
     font-size: 16px;
@@ -57,8 +55,6 @@
     width: 160px;
 
     border: 0;
-    border-bottom-right-radius: 16px;
-
     background: #805AD5;
 
     color: #fff;
