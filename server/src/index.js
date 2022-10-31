@@ -1,4 +1,5 @@
 import './config/mongoose.js'
+import 'dotenv/config'
 
 import express from 'express'
 import cors from 'cors'
@@ -6,6 +7,10 @@ import { Server } from 'socket.io'
 
 import routes from './routes.js'
 import MessageController from './controllers/message.js'
+
+const ENVIROMENT = process.env.NODE_ENV
+const LOCAL_CLIENT_URL = process.env.LOCAL_CLIENT_URL
+const PROD_CLIENT_URL = process.env.PROD_CLIENT_URL
 
 const app = express()
 
@@ -18,12 +23,12 @@ const server = app.listen(3333,
 
 const io = new Server(server, {
   cors: {
-    origin: 'http://localhost:5173',
+    origin: ENVIROMENT === 'development'
+      ? LOCAL_CLIENT_URL
+      : PROD_CLIENT_URL,
     methods: ["GET", "POST"]
   }
 })
-
-export default io
 
 io.on('connection', socket => {
   console.log('👍 User connected')
