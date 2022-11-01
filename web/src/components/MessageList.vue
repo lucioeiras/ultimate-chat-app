@@ -40,7 +40,8 @@
   }
 
   #messageList ul {
-    overflow: auto;
+    overflow: auto !important;
+    -webkit-overflow-scrolling: touch;
     max-height: 100%;
 
     border-radius: 0px 16px 16px 0;
