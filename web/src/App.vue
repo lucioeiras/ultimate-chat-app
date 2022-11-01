@@ -19,8 +19,7 @@
 
 <style scoped>
   main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: fill-available;
+    height: -webkit-fill-available;
   }
 </style>
