@@ -11,7 +11,9 @@ class SocketIO {
   socket
 
   connect() {
-    this.socket = io(ENVIROMENT === 'development' ? LOCAL_URL : PROD_URL)
+    console.log(ENVIROMENT, LOCAL_URL, PROD_URL)
+
+    this.socket = io(ENVIROMENT === 'production' ? PROD_URL : LOCAL_URL)
 
     this.socket.on('new message', message => {
       messages.add({

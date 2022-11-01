@@ -8,7 +8,6 @@ import { Server } from 'socket.io'
 import routes from './routes.js'
 import MessageController from './controllers/message.js'
 
-const ENVIROMENT = process.env.NODE_ENV
 const LOCAL_CLIENT_URL = process.env.LOCAL_CLIENT_URL
 const PROD_CLIENT_URL = process.env.PROD_CLIENT_URL
 
@@ -25,9 +24,7 @@ const server = app.listen(PORT,
 
 const io = new Server(server, {
   cors: {
-    origin: ENVIROMENT === 'development'
-      ? LOCAL_CLIENT_URL
-      : PROD_CLIENT_URL,
+    origin: [LOCAL_CLIENT_URL, PROD_CLIENT_URL],
     methods: ["GET", "POST"]
   }
 })
