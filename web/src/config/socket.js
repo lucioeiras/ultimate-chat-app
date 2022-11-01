@@ -11,8 +11,6 @@ class SocketIO {
   socket
 
   connect() {
-    console.log(ENVIROMENT, LOCAL_URL, PROD_URL)
-
     this.socket = io(ENVIROMENT === 'production' ? PROD_URL : LOCAL_URL)
 
     this.socket.on('new message', message => {

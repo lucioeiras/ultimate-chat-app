@@ -13,7 +13,7 @@
 <style scoped>
   #chat {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
