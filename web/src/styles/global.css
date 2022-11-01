@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+#app {
+  height: 100%;
+}
+
 body, input, button, textarea {
   font-family: 'Inter', sans-serif;
 }

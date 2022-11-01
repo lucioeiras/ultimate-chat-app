@@ -19,9 +19,6 @@
 
 <style scoped>
   main {
-    height: 100%;
-    padding: 30px;
-
     display: flex;
     justify-content: center;
     align-items: center;
