@@ -34,9 +34,7 @@
 <style scoped>
   #messageList {
     overflow: hidden;
-
     width: 100vw;
-    height: calc(100vh - 72px);
   }
 
   #messageList ul {
