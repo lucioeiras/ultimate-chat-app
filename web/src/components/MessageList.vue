@@ -35,12 +35,13 @@
   #messageList {
     overflow: hidden;
     width: 100vw;
-    height: 100%;
+    max-height: 100%;
+    padding-bottom: 72px;
   }
 
   #messageList ul {
     overflow: auto;
-    height: 100%;
+    max-height: 100%;
 
     border-radius: 0px 16px 16px 0;
 
