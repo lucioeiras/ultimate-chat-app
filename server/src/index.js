@@ -46,5 +46,5 @@ io.on('connection', socket => {
     socket.broadcast.emit('new message', newMessage)
   })
 
-  socket.on('disconnect', () => console.log('🥺 User disconnected'))
+  socket.on('disconnect', () => console.log('😭 User disconnected'))
 })
