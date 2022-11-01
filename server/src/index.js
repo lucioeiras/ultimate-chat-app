@@ -18,7 +18,7 @@ app.use(cors())
 app.use(express.json())
 app.use(routes)
 
-const server = app.listen(3333,
+const server = app.listen(ENVIROMENT === 'development' ? 3333 : 80,
   () => console.log('🚀 Server started at localhost:3333'))
 
 const io = new Server(server, {
